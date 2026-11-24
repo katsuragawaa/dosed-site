@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade do DOSED</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700&amp;family=Figtree:wght@500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header>
+<a class="brand" href="../">DOSED</a>
+</header>
+<main>
+<h1>Política de Privacidade do DOSED</h1>
+<p class="updated">Última atualização: {{DATA}}</p>
+<p>O DOSED é um app que lembra você de tomar seus remédios de uso contínuo e transforma a rotina num jogo leve entre amigos. Ele é publicado no Google Play por DOSED Labs ({{CONTROLADOR}}). Dúvidas e pedidos: <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>.</p>
+
+<h2>Resumo</h2>
+<ul>
+<li>Sem conta, tudo fica no seu celular.</li>
+<li>Com conta, o servidor guarda o horário e a situação das suas doses, mas nunca o nome dos remédios.</li>
+<li>Seus amigos veem se você está em dia, nunca o que você toma.</li>
+<li>Não vendemos dados, não mostramos anúncios e não usamos rastreamento de terceiros.</li>
+<li>Você pode apagar a conta quando quiser, no app ou por e-mail.</li>
+</ul>
+
+<h2>O que fica só no seu celular</h2>
+<p>O nome dos remédios, a dose de cada um, os horários cadastrados e o registro dos remédios que você toma só quando precisa. Isso nunca vai para o servidor. O lembrete que aparece na tela mostra o nome do remédio, mas é criado pelo próprio celular.</p>
+
+<h2>O que vai para o servidor, se você criar uma conta</h2>
+<ul>
+<li>Da sua conta Google: nome, e-mail, foto de perfil (o endereço da imagem) e o identificador da conta. O DOSED usa o nome e o e-mail; a foto não é usada.</li>
+<li>Das suas doses: a data, o horário previsto, a situação (pendente, tomada, pulada ou perdida) e a hora em que você marcou. Com isso o servidor calcula o resumo de cada dia e a sua sequência. O horário das doses é um dado de saúde.</li>
+<li>Do jogo: seu código de convite, seus amigos, as cutucadas enviadas e recebidas, as moedas, os itens da loja do mascote (moedas do jogo, sem dinheiro de verdade), as conquistas e a cor e o acessório do seu mascote.</li>
+<li>Configurações: seu fuso horário, se você quer avisos de amigos atrasados, e a data e a versão do consentimento que você aceitou.</li>
+<li>Do aparelho: um código de notificação, que permite mandar avisos para o seu celular.</li>
+<li>Registros técnicos: o serviço de login guarda a data e o endereço IP dos acessos, por segurança.</li>
+</ul>
+
+<h2>Para que usamos</h2>
+<p>Para lembrar você das doses, mostrar sua sequência e seu mascote, calcular moedas e conquistas, mostrar aos seus amigos se você está em dia e mandar avisos (uma cutucada de um amigo, um reforço quando uma dose atrasa). O horário das doses só é tratado com o seu consentimento, dado na tela "Seus dados de saúde" ao criar a conta. Sem consentimento, não há conta.</p>
+
+<h2>O que seus amigos veem</h2>
+<p>Seu nome, seu mascote, se você está em dia ou atrasado, sua sequência e sua posição no ranking. Nunca quais remédios você toma, a dose ou os horários. Só vê isso quem você adicionou como amigo pelo código de convite, e você pode desfazer a amizade quando quiser.</p>
+
+<h2>Quem trata os dados com a gente</h2>
+<p>Não vendemos nem cedemos seus dados. Usamos estes serviços, que tratam os dados só para fazer o DOSED funcionar:</p>
+<ul>
+<li>Supabase: banco de dados e login, com servidores em São Paulo.</li>
+<li>Google: login com a conta Google, e o Firebase Cloud Messaging, que entrega as notificações no Android.</li>
+<li>Expo: serviço que envia as notificações do servidor para o seu celular.</li>
+</ul>
+<p>As notificações enviadas pelo servidor contêm só o nome de um amigo ou o horário de uma dose atrasada. Google e Expo ficam nos Estados Unidos, então esses dados podem ser transferidos para fora do Brasil.</p>
+
+<h2>Por quanto tempo</h2>
+<p>Enquanto você tiver conta. Ao apagar a conta, os dados saem do servidor na hora. Cópias de segurança do banco, quando existem, são apagadas em até {{BACKUP_DIAS}} dias.</p>
+
+<h2>Seus direitos</h2>
+<p>Pela LGPD, você pode pedir acesso, correção ou exclusão dos seus dados, saber com quem eles são tratados e retirar o consentimento. Retirar o consentimento é apagar a conta. Para qualquer pedido, escreva para <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>; respondemos em até 15 dias. Você também pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD).</p>
+
+<h2>Como apagar sua conta</h2>
+<p>No app: Perfil, "Apagar conta". Sem o app: veja <a href="https://katsuragawaa.github.io/dosed-site/excluir-conta/">https://katsuragawaa.github.io/dosed-site/excluir-conta/</a>.</p>
+
+<h2>Idade</h2>
+<p>O DOSED é para maiores de 18 anos.</p>
+
+<h2>Segurança</h2>
+<p>A comunicação com o servidor é criptografada. No banco, uma regra impede que uma pessoa leia os dados de outra; os amigos recebem apenas o resumo descrito acima.</p>
+
+<h2>Aviso de saúde</h2>
+<p>O DOSED só lembra e acompanha. Não substitui orientação médica.</p>
+
+<h2>Mudanças nesta política</h2>
+<p>Se esta política mudar, a data no topo muda. Mudanças no que é coletado aparecem no app antes de valer.</p>
+</main>
+<footer>
+<p>DOSED Labs &middot; <a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p>
+<p><a href="../">Início</a> &middot; <a href="../privacidade/">Política de Privacidade</a> &middot; <a href="../excluir-conta/">Apagar conta</a></p>
+</footer>
+</body>
+</html>
